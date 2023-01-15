@@ -27,7 +27,12 @@ override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SongViewHolde
             binding.tvSinger.text = item.singer
             binding.tvNumber.text = item.number
             binding.tvTime.text = item.time
+
+            itemView.setOnClickListener{
+                onClick(adapterPosition)
         }
+
+
 
     }
 }
